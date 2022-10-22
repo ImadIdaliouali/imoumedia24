@@ -31,10 +31,9 @@ dependencies:
     sdk: flutter
   flutter_localizations:
     sdk: flutter
-  http: ^0.13.1
+  http: ^0.13.5
   shimmer: ^2.0.0
   html_unescape: ^2.0.0
-  connectivity_plus: ^2.3.5
   timeago: ^3.2.2
   share: ^2.0.4
   flutter_html: ^2.2.1

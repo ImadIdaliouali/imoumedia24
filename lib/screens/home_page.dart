@@ -30,49 +30,57 @@ class _HomePageState extends State<HomePage> {
     if (currentPage == DrawerSections.main) {
       body = NewsScreen(
         key: UniqueKey(),
-        url: 'https://imoumedia24.com/wp-json/wp/v2/posts?',
+        url: 'https://imoumedia24.com/wp-json/wp/v2/posts?_embed&',
       );
     } else if (currentPage == DrawerSections.callUs) {
       body = const CallUsScreen();
     } else if (currentPage == DrawerSections.news) {
       body = NewsScreen(
         key: UniqueKey(),
-        url: 'https://imoumedia24.com/wp-json/wp/v2/posts?categories=47&',
+        url:
+            'https://imoumedia24.com/wp-json/wp/v2/posts?_embed&categories=47&',
       );
     } else if (currentPage == DrawerSections.policy) {
       body = NewsScreen(
         key: UniqueKey(),
-        url: 'https://imoumedia24.com/wp-json/wp/v2/posts?categories=48&',
+        url:
+            'https://imoumedia24.com/wp-json/wp/v2/posts?_embed&categories=48&',
       );
     } else if (currentPage == DrawerSections.sports) {
       body = NewsScreen(
         key: UniqueKey(),
-        url: 'https://imoumedia24.com/wp-json/wp/v2/posts?categories=49&',
+        url:
+            'https://imoumedia24.com/wp-json/wp/v2/posts?_embed&categories=49&',
       );
     } else if (currentPage == DrawerSections.art) {
       body = NewsScreen(
         key: UniqueKey(),
-        url: 'https://imoumedia24.com/wp-json/wp/v2/posts?categories=50&',
+        url:
+            'https://imoumedia24.com/wp-json/wp/v2/posts?_embed&categories=50&',
       );
     } else if (currentPage == DrawerSections.health) {
       body = NewsScreen(
         key: UniqueKey(),
-        url: 'https://imoumedia24.com/wp-json/wp/v2/posts?categories=51&',
+        url:
+            'https://imoumedia24.com/wp-json/wp/v2/posts?_embed&categories=51&',
       );
     } else if (currentPage == DrawerSections.community) {
       body = NewsScreen(
         key: UniqueKey(),
-        url: 'https://imoumedia24.com/wp-json/wp/v2/posts?categories=52&',
+        url:
+            'https://imoumedia24.com/wp-json/wp/v2/posts?_embed&categories=52&',
       );
     } else if (currentPage == DrawerSections.technique) {
       body = NewsScreen(
         key: UniqueKey(),
-        url: 'https://imoumedia24.com/wp-json/wp/v2/posts?categories=53&',
+        url:
+            'https://imoumedia24.com/wp-json/wp/v2/posts?_embed&categories=53&',
       );
     } else if (currentPage == DrawerSections.business) {
       body = NewsScreen(
         key: UniqueKey(),
-        url: 'https://imoumedia24.com/wp-json/wp/v2/posts?categories=54&',
+        url:
+            'https://imoumedia24.com/wp-json/wp/v2/posts?_embed&categories=54&',
       );
     }
     return Scaffold(
@@ -364,7 +372,7 @@ class CustomSearchDelegate extends SearchDelegate {
   Widget buildResults(BuildContext context) {
     return NewsScreen(
       key: UniqueKey(),
-      url: 'https://imoumedia24.com/wp-json/wp/v2/posts?search=$query&',
+      url: 'https://imoumedia24.com/wp-json/wp/v2/posts?_embed&search=$query&',
     );
   }
 

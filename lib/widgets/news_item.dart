@@ -63,7 +63,7 @@ class NewsItem extends StatelessWidget {
   }
 
   String get ImageUrl {
-    return 'https://imoumedia24.com/' + imageUrl;
+    return "https://imoumedia24.com" + imageUrl;
   }
 
   Color get color {
@@ -113,7 +113,6 @@ class NewsItem extends StatelessWidget {
         // 'num_comments': num_comments,
       },
     );
-    
   }
 
   @override

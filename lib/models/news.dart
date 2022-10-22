@@ -27,7 +27,7 @@ class News {
         categoryId: json["categories"][0],
         date: json["date"],
         title: json["title"]["rendered"],
-        imageUrl: json["jetpack_featured_media_url"],
+        imageUrl: json["_embedded"]["wp:featuredmedia"][0]["source_url"],
         content: json["content"]["rendered"],
         link: json["link"],
       );
